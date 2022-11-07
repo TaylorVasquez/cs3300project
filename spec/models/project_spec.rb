@@ -10,7 +10,7 @@ RSpec.describe Project, type: :model do
     
     it "should be able to save project" do
       project = Project.new(title: "Title", description: "Some description content goes here")
-      expect(project.save?).to eq(true)
+      expect(project.save!).to eq(true)
     end
   end
 
