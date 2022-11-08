@@ -1,14 +1,42 @@
-<p style="color: green"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>  
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
 
-<h1>Projects</h1>
+    li {
+        float: left;
+    }
 
-<div id="projects">
-  <% @projects.each do |project| %>
-    <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
-  <% end %>
-</div>
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
-<%= link_to "New project", new_project_path %>
+    li a:hover {
+        background-color: #111;
+    }
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#account">Account</a></li>
+</ul>
+
+<p> Put your HTML using Bootstrap CSS
+</p>
+
+
+</body>
+</html>
