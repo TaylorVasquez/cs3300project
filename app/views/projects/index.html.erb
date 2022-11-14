@@ -98,8 +98,9 @@
                 <a style="font-weight: bold;">&nbsp;&nbsp;<%= project.title %></a> <br><br>
                 <a>&nbsp;&nbsp;<%= project.description %></a><br><br>
                 <form>
+                    <!-- Better button format -->
                     <div>
-                        <button type="button" class="btn btn-primary"><%= link_to "Show this project", project %></button>
+                        <%= link_to "Show this project", project, :class => "btn btn-primary" %>
                     </div>
                 </form>
             </div>
